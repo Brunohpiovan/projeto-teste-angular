@@ -1,0 +1,24 @@
+.card{
+  width: 87%;
+  margin: auto;
+  background-color: rgba(211, 211, 211, 0.623);
+}
+.card p{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: larger;
+}
+.img1{
+  height: 290px;
+  width: 891px;
+  max-width: 99%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.img2{
+  max-width: 99%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
