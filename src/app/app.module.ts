@@ -32,6 +32,8 @@ import { NavComponent } from './components/nav/nav.component';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { GraduacaoListComponent } from './components/graducao/graduacao-list/graduacao-list.component';
+import { PosgradListComponent } from './components/posgraducao/posgrad-list/posgrad-list.component';
+import { ProfessoresListComponent } from './components/professores/professores-list/professores-list.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { GraduacaoListComponent } from './components/graducao/graduacao-list/gra
     NavComponent,
     HomeComponent,
     HeaderComponent,
-    GraduacaoListComponent
+    GraduacaoListComponent,
+    PosgradListComponent,
+    ProfessoresListComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Graduacao, GraduacaoService } from 'src/app/service/graduacao/graduacao.service';
 
 @Component({
   selector: 'app-graduacao-list',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GraduacaoListComponent implements OnInit {
 
-  constructor() { }
+  graduacoes: Graduacao[] = [];
+
+  constructor(private graduacaoService : GraduacaoService) { }
 
   ngOnInit(): void {
+    this.graduacaoService.getGraduacoes().subscribe(
+      (data) => {
+        this.graduacoes = data;  // Armazenar as graduações retornadas pela API
+      },
+      (error) => {
+        console.error('Erro ao buscar graduações:', error);
+      }
+    );
   }
 
 }
