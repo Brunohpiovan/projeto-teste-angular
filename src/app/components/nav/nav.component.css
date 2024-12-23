@@ -1,0 +1,25 @@
+.container{
+  height: 100%;
+}
+.sidenav{
+  width: 195px;
+  color: white;
+  background-color: rgba(223, 221, 221, 0.753);
+}
+
+img{
+  width: 95%;
+  height: 7rem;
+  margin: 1.2rem auto 0.8rem auto;
+}
+.sidenav a{
+  color: black;
+}
+.sidenav i{
+  margin-right: .6rem;
+}
+.menu{
+  margin: 10px 0px 0px 10px;
+  color: white;
+  background-color: rgb(121, 0, 0);
+}
